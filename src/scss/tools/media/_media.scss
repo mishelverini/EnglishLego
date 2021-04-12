@@ -1,0 +1,41 @@
+@mixin media($type) {
+
+    @if($type==phone) {
+        @media (max-width: $phone + px) {
+            @content;
+        }
+        @media (min-width: $phone + px) and (max-width: $tablet-low + px) {
+            @content;
+        }
+    }
+    @else if ($type==tablet-low) {
+        @media (min-width: $tablet-low + px) and (max-width: $tablet + px) {
+            @content;
+        }
+    }
+    @else if ($type==tablet) {
+        @media (min-width: $tablet + px) and (max-width: $laptop + px) {
+            @content;
+        }
+    }
+    @else if ($type==laptop) {
+        @media (min-width: $laptop + px) and (max-width: $desktop + px) {
+            @content;
+        }
+    }
+    @else if ($type==desktop) {
+        @media (min-width: $desktop + px) and (max-width: $desktop-hd + px) {
+            @content;
+        }
+    }
+    @else if ($type==desktop-hd) {
+        @media (min-width: $desktop-hd + px) and (max-width: $desktop-4k + px) {
+            @content;
+        }
+    }
+    @else if ($type==desktop-4k) {
+        @media (min-width: $desktop-4k + px) and (max-width: 2559px){
+            @content;
+        }
+    }
+}
