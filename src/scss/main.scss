@@ -1,23 +1,30 @@
-// Normalize css and add settings ================================================================================>>>>>>>
-@import './tools/normalize/normalize.scss';
-// Normalize css and add settings ================================================================================>>>>>>>
+// Normalize css and add settings ========================================>>>>>>>
+@import "./tools/normalize/normalize.scss";
 
+// Normalize css and add settings ========================================>>>>>>>
 // Fonts ================================================================================>>>>>>>
-@import './tools/fonts/fonts.scss';
+@import "./tools/fonts/fonts.scss";
 // Fonts ================================================================================>>>>>>>
 
 // Variables project ================================================================================>>>>>>>
-@import './tools/variables/vars.scss';
+@import "./tools/variables/vars.scss";
 // Variables project ================================================================================>>>>>>>
 
-// CSS Media Queries for Desktop, Tablet, Mobile ================================================================================>>>>>>>
-@import './tools/media/media.scss';
-// CSS Media Queries for Desktop, Tablet, Mobile ================================================================================>>>>>>>
+// CSS Media Queries for Desktop, Tablet, Mobile ===========================================================>>>>>>>
+@import "./tools/media/media.scss";
+// CSS Media Queries for Desktop, Tablet, Mobile ===========================================================>>>>>>>
 
 // Functions ================================================================================>>>>>>>
-@import './tools/functions/functions.scss';
+@import "./tools/functions/functions.scss";
 // Functions ================================================================================>>>>>>>
 
 // Mixins ================================================================================>>>>>>>
-@import './tools/mixins/mixins.scss';
+@import "./tools/mixins/mixins.scss";
 // Mixins ================================================================================>>>>>>>
+
+@import "./components/content-selection-bar.scss";
+
+.body {
+  width: 100px;
+  background-color: #a1bc1a;
+}
