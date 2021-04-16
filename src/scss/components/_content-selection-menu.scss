@@ -1,0 +1,17 @@
+.content-selection-menu {
+  padding-right: 32px;
+  padding-left: 80px;
+  width: 382px;
+  height: 100%;
+  background-color: rgb(216, 21, 60);
+
+  &__cteate-set {
+    height: 200px;
+    background-color: rgb(12, 227, 220);
+  }
+
+  &__filter {
+    height: 500px;
+    background-color: rgb(109, 0, 188);
+  }
+}

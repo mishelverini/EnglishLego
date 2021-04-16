@@ -1,0 +1,109 @@
+.content-selection-bar {
+  --text-color: rgb(0, 0, 0);
+  --border: #bec3e1;
+  --background: #fff;
+  --active: rgb(191, 255, 0);
+
+  overflow: auto;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: #567890;
+
+  &__group {
+    margin-bottom: 20px;
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    padding: 10px;
+    user-select: none;
+  }
+
+  &__name {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    outline: none;
+    // margin-left: 35px;
+    border: none;
+    font-size: 24px;
+    color: rgb(191, 255, 0);
+    cursor: pointer;
+  }
+
+  &__name span {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  &__button {
+    outline: none;
+    border: 3px solid var(--active);
+    border-radius: 5px;
+    color: var(--active);
+    background: none;
+    cursor: pointer;
+  }
+
+  &__list {
+    margin-left: 15px;
+    width: 50%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &__label {
+    margin-left: 15px;
+    color: var(--text-color-active, var(--text-color));
+    cursor: inherit;
+  }
+
+  &__label:hover {
+    --text-color-active: var(--active);
+  }
+
+  &__checkbox {
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    outline: none;
+    border: 3px solid var(--border-active, var(--border));
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    background: var(--background-active, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+
+  &__checkbox:checked {
+    --background-active: var(--active);
+    --border-active: var(--active);
+  }
+
+  &__checkbox:hover {
+    --border-active: var(--active);
+  }
+
+  &__checkbox::before {
+    content: "\2714";
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: none;
+    font-size: 20px;
+  }
+
+  &__checkbox:checked::before {
+    display: block;
+  }
+}

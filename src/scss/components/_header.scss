@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  height: 80px;
+  background-color: #131215;
+
+  // &__wrapper {
+  //   @include wrapper-1440-80;
+  //   height: 100%;
+  // }
+}

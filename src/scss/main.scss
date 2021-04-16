@@ -22,9 +22,13 @@
 @import "./tools/mixins/mixins.scss";
 // Mixins ================================================================================>>>>>>>
 
+// @import "../scss/components/wrapper.scss";
 @import "./components/content-selection-bar.scss";
-
-.body {
-  width: 100px;
-  background-color: #a1bc1a;
-}
+@import "./components/wrapper.scss";
+@import "./components/header.scss";
+@import "./components/content-selection-menu.scss";
+@import "./components/main-content.scss";
+@import "./components/board-content.scss";
+@import "./components/board-settings.scss";
+@import "./components/board-game.scss";
+@import "./components/card.scss";
