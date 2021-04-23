@@ -1,12 +1,17 @@
 @mixin font-face($font-family, $url, $weight) {
-    @font-face {
-        font-family: '#{$font-family}';
-            src: url('#{$url}.woff2') format('woff2'),
-            url('#{$url}.woff') format('woff');
-        font-weight: #{$weight};
-        font-display: swap;
-        font-style: normal;
-    }
+  @font-face {
+    font-family: "#{$font-family}";
+      src: url("#{$url}.woff2") format("woff2"),
+      url("#{$url}.woff") format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
 }
+
+@include font-face("Open Sans", "../../../fonts/OpenSans-Light", 300);
+@include font-face("Open Sans", "../../../fonts/OpenSans-Regular", 400);
+@include font-face("Open Sans", "../../../fonts/OpenSans-SemiBold", 600);
+@include font-face("Open Sans", "../../../fonts/OpenSans-Bold", 700);
 
 // @include font-face('NotoSans Regular', '../fonts/notosans', 600);

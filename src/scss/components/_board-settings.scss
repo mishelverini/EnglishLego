@@ -4,18 +4,122 @@
   justify-content: space-between;
   padding-right: 80px;
   height: 60px;
-  background-color: rgb(126, 252, 0);
+  background-color: $secondary-static-90;
+  user-select: none;
 
   &__lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-left: 60px;
-    width: 100px;
-    height: 50px;
-    background-color: rgb(154, 34, 213);
+    border-radius: 8px;
+    width: 237px;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  &__lang-mode {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+
+  &__lang-mode img {
+    margin-left: 5px;
+    width: 27px;
+    height: 18px;
+  }
+
+  &__lang-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
   }
 
   &__game {
-    width: 100px;
-    height: 50px;
-    background-color: rgb(154, 34, 213);
+    display: flex;
+    width: 270px;
+    height: 40px;
   }
+
+  &__game-speed {
+    flex-grow: 1;
+    margin-right: 2px;
+    border-radius: 8px 0 0 8px;
+    background-color: $secondary-static;
+  }
+
+  &__game-speed-nav {
+    position: relative;
+    display: flex;
+    height: 100%;
+    color: rgb(255, 255, 255);
+  }
+
+  &__game-speed-wrap {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    width: calc(100% - 24px);
+    box-shadow: 0 4px 36px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__game-speed-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    cursor: pointer;
+  }
+
+  &__game-speed-option img {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__game-speed-option_active {
+    color: $primary-CTA;
+  }
+
+  &__game-speed-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    height: 100%;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  &__game-speed-title span {
+    margin-right: 4px;
+    margin-left: 8px;
+    font-weight: 300;
+  }
+
+  &__game-start {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 8px 8px 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: $primary-CTA;
+  }
+}
+
+.drop-down-arrow {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }

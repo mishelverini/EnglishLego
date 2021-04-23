@@ -1,14 +1,8 @@
-.content-selection-bar {
+.content-selection-menu {
   --text-color: rgb(0, 0, 0);
   --border: #bec3e1;
   --background: #fff;
   --active: rgb(191, 255, 0);
-
-  overflow: auto;
-  padding: 20px;
-  width: 400px;
-  height: 400px;
-  background-color: #567890;
 
   &__group {
     margin-bottom: 20px;
@@ -20,10 +14,7 @@
 
   &__name {
     position: relative;
-    // display: flex;
-    // justify-content: space-between;
     outline: none;
-    // margin-left: 35px;
     border: none;
     font-size: 24px;
     color: rgb(191, 255, 0);

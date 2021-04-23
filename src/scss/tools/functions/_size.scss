@@ -1,3 +1,3 @@
 @function s($value, $base: 1440) {
-    @return $value / $base * 100vw;
+  @return $value / $base * 100vw;
 }

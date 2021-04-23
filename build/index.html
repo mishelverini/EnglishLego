@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,232 @@
     <link rel="stylesheet" href="./style/main.min.css">
     <title>Document</title>
 </head>
-<body>
+
+<body class="body">
+    <section class="header">
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <img src="./images/logo.png" alt="logo">
+            <img src="./images/logo-text.png" alt="logo-text"></img>
+        </div>
+    </div>
+</section>
+    <main class="main-content">
+    <section class="content-selection-menu">
+    <div class="content-selection-menu__cteate-set">
+        <div class="content-selection-menu__create-set-title">Study sets</div>
+        <div class="content-selection-menu__create-set-control">create new set +</div>
+    </div>
+    <div class="content-selection-menu__filter">
+        <details class="content-selection-menu__filter-item">
+            <summary class="content-selection-menu__filter-item-name">
+                <span class="content-selection-menu__filter-item-name-title">
+                    <span class="content-selection-menu__filter-item-name-arrow">></span>
+                    <input id="basic" name="verbs" type="checkbox" class="content-selection-menu__checkbox">
+                    <span>Basic set</span>
+                </span>
+                <img src="../images/more-vertical.png" alt="add-set" class="content-selection-menu__filter-item-name-button">
+            </summary>
+            <ul class="content-selection-menu__list">
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="work">Work</label>
+                    <input id="work" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="home">Home</label>
+                    <input id="home" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="cooking">Cooking</label>
+                    <input id="cooking" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="ride">Ride</label>
+                    <input id="ride" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="do">Do</label>
+                    <input id="do" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="shopping">Shopping</label>
+                    <input id="shopping" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+            </ul>
+        </details>
+        <details class="content-selection-menu__filter-item">
+            <summary class="content-selection-menu__filter-item-name">
+                <span class="content-selection-menu__filter-item-name-title">
+                    <span class="content-selection-menu__filter-item-name-arrow">></span>
+                    <input id="verbs" name="verbs" type="checkbox" class="content-selection-menu__checkbox">
+                    <span>Verbs</span>
+                </span>
+                <img src="../images/more-vertical.png" alt="add-set" class="content-selection-menu__filter-item-name-button">
+            </summary>
+            <ul class="content-selection-menu__list">
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="work">Call</label>
+                    <input id="call" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="home">Mops</label>
+                    <input id="mops" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="cooking">Donong</label>
+                    <input id="doning" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="ride">Pipe</label>
+                    <input id="pipe" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="do">Go</label>
+                    <input id="go" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="shopping">Slowing</label>
+                    <input id="slowing" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+            </ul>
+        </details>
+        <details class="content-selection-menu__filter-item">
+            <summary class="content-selection-menu__filter-item-name">
+                <span class="content-selection-menu__filter-item-name-title">
+                    <span class="content-selection-menu__filter-item-name-arrow">></span>
+                    <input id="kekw" name="verbs" type="checkbox" class="content-selection-menu__checkbox">
+                    <span>Kekw</span>
+                </span>
+                <img src="../images/more-vertical.png" alt="add-set" class="content-selection-menu__filter-item-name-button">
+            </summary>
+            <ul class="content-selection-menu__list">
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="work">Fail</label>
+                    <input id="fail" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="home">Hole</label>
+                    <input id="hole" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="cooking">Buy</label>
+                    <input id="buy" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="ride">Drink</label>
+                    <input id="drink" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="do">Slow</label>
+                    <input id="slow" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="shopping">Poping</label>
+                    <input id="poping" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+            </ul>
+        </details>
+        <details class="content-selection-menu__filter-item">
+            <summary class="content-selection-menu__filter-item-name">
+                <span class="content-selection-menu__filter-item-name-title">
+                    <span class="content-selection-menu__filter-item-name-arrow">></span>
+                    <input id="lol" name="verbs" type="checkbox" class="content-selection-menu__checkbox">
+                    <span>LOL</span>
+                </span>
+                <img src="../images/more-vertical.png" alt="add-set" class="content-selection-menu__filter-item-name-button">
+            </summary>
+            <ul class="content-selection-menu__list">
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="work">Grail</label>
+                    <input id="grail" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="home">Dolly</label>
+                    <input id="dolly" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="cooking">May</label>
+                    <input id="may" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="ride">Swing</label>
+                    <input id="swing" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="do">Mo</label>
+                    <input id="mo" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+                <li class="content-selection-menu__list-item">
+                    <label class="content-selection-menu__list-item-label" for="shopping">Sising</label>
+                    <input id="sising" name="verbs" type="checkbox" class="content-selection-menu__list-item-checkbox">
+                </li>
+            </ul>
+        </details>
+    </div>
+</section>
+    <section class="board-content">
+    <section class="board-settings">
+    <div class="board-settings__lang">
+        <div class="board-settings__lang-mode">
+            <div class="board-settings__lang-mode-title">En</div>
+            <img src="./images/uk.png" alt="uk-lang-icon" class="board-settings__lang-mode-lang">
+        </div>
+        <div class="board-settings__lang-change">
+            <img src="./images/change-lang.png" alt="change-icon">
+        </div>
+        <div class="board-settings__lang-mode">
+            <div class="board-settings__lang-mode-title">Ru</div>
+            <img src="./images/ru.png" alt="ru-lang-icon" class="board-settings__lang-mode-lang">
+        </div>
+        <img src="./images/arrow-ios-down.png" alt="drop-down-icon" class="drop-down-arrow">
+    </div>
+    <div class="board-settings__game">
+        <div class="board-settings__game-speed">
+            <details class="board-settings__game-speed-nav">
+                <summary class="board-settings__game-speed-title">Speed:<span>Normal</span>
+                    <img src="./images/arrow-ios-down.png" alt="drop-down-icon" class="drop-down-arrow">
+                </summary>
+                <ul class="board-settings__game-speed-wrap">
+                    <li class="board-settings__game-speed-option">
+                        <span>Slow</span>
+                        <img src="./images/checkmark.png" alt="switch-on">
+                    </li>
+                    <li class="board-settings__game-speed-option board-settings__game-speed-option_active">
+                        <span>Normal</span>
+                        <img src="./images/checkmark.png" alt="switch-on">
+                    </li>
+                    <li class="board-settings__game-speed-option">
+                        <span>Fast</span>
+                        <img src="./images/checkmark.png" alt="switch-on">
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <div class="board-settings__game-start">Start training</div>
+    </div>
+</section>
+    <section class="board-game">
+    <div class="board-game__question">
+        <div class="board-game__question-text">Как тебя зовут?</div>
+    </div>
+    <div class="board-game__cards">
+        <article class="card">
+    <div class="card__icon">()</div>
+    <div class="card__text">Sample text</div>
+</article>
+        <article class="card">
+    <div class="card__icon">()</div>
+    <div class="card__text">Sample text</div>
+</article>
+        <article class="card">
+    <div class="card__icon">()</div>
+    <div class="card__text">Sample text</div>
+</article>
+    </div>
+</section>
+</section>
+</main>
     <script src="./js/index.js"></script>
 </body>
+
 </html>

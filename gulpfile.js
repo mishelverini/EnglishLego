@@ -79,7 +79,7 @@ const fontsConversion = () => {
 };
 
 const clean = () => {
-  return del('./build/**');
+  return del('./build');
 };
 
 const scriptsConversion = () => {
@@ -124,8 +124,8 @@ const watchFiles = () => {
     }
   });
 
-  watch('./src/index.html', htmlConversion);
-  watch('./src/scss/**/*.scss', htmlConversion);
+  watch('./src/**/*.html', htmlConversion);
+  watch('./src/scss/**/*.scss', stylesConversion);
   watch('./src/fonts/**.ttf', fontsConversion);
   watch('./src/images/**.jpg', imgConversion);
   watch('./src/images/**.png', imgConversion);
